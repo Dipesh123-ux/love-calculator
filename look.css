@@ -1,0 +1,164 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+body
+{
+    overflow:hidden;
+
+}
+section
+{
+    display : flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(to bottom , #f1f4f9,#dff1ff);
+}
+section .color
+{
+    position:absolute;
+    filter:blur(150px);
+
+}
+section .color:nth-child(1)
+{
+    top:-300px;
+    height:600px;
+    width:600px;
+    background:#ff359b;
+}
+section .color:nth-child(2)
+{
+    bottom:-80px;
+    height:350px;
+    width:550px;
+    left:150px;
+    background:#fffd87;
+}
+section .color:nth-child(3)
+{
+    height:300px;
+    bottom:5px;
+    width:300px;
+    left:100px;
+    background:#00d2ff;
+}
+.box
+{
+    position:relative;
+}
+.container
+{
+    position:relative;
+    width:400px;
+    min-height: 400px;
+    display:flex;
+    flex-direction:row-reverse;
+    background:(255,255,255,0.1);
+    border-radius:10px;
+    justify-content:center;
+    align-items:center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0 , 0 , 0 ,0.1);
+    border:1px solid rgba(255, 255, 255,0.5);
+    border-right:1px solid rgba(255, 255, 255,0.2);
+    border-bottom:1px solid rgba(255, 255, 255,0.2);
+
+}
+
+.form
+{    position: relative;
+     width:100%;
+     height:100%;
+     padding:70px;
+
+}
+.form h2
+{
+    position: relative;
+    font-size:24px;
+    font-weight:bold;
+    color:white;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+    margin-left: 27px;
+
+
+}
+.form h2:hover
+{
+    text-shadow:white 10px 20px 40px;
+}
+.form h2::before
+{
+    content : '';
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    width:200px;
+    height:2px;
+    background:#fff;
+}
+
+.form .inputBox 
+{
+    width:100%;
+    margin-top:20px;
+
+}
+.form .inputBox input
+{
+    width:100%;
+    background:rgba(255, 255, 255,0.4);
+    border:none;
+    outline:none;
+    padding:10px 20px;
+    border-radius:6px;
+    font-weight: bold;
+}
+.form .heart
+{
+    position:relative;
+    left:100px;
+    bottom:-3px;
+    font-size:40px;
+    
+}
+
+.form .button
+{
+    position: relative;
+    border:none;
+    padding:7px 10px;
+    background-color:rgba(255,255,255 , 0.7);
+    font-weight: 600;
+    left:85px;
+    border-radius: 8px;
+
+}
+
+
+
+.form .button:hover
+{
+    transform:scale(1.1);
+}
+#error
+{
+    position: relative;
+    left:79px;
+    bottom:10px;
+    font-weight: bolder;
+    color: red;
+}
+.heading {
+    position: relative;
+    left:115px;
+    bottom:-38px;
+    z-index: 2;
+
+}
